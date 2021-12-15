@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icons/icons8-music.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Music N Vibes</title>
+  <script src="./js/index.js" defer></script>
+</head>
+<body class="body">
+  <nav class="nav">
+    <img class="nav__user" src="./images/sukuna.jpg" alt="User image">
+
+    <ul class="nav__items">
+      <li class="nav__item profile">
+        <a class="nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-user"></use>
+          </svg>
+          <p>Profile</p></a>
+      </li>
+      <li class="nav__item likedsongs">
+        <a class="nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-heart"></use>
+          </svg>
+
+          <p>Favourites</p>
+
+        </a>
+      </li>
+      <li class="nav__item contact-us">
+        <a class="nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-chat-bubble-dots"></use>
+          </svg>
+          <p>Contact</p></a>
+      </li>
+      
+      <li class="nav__item faq">
+        <a class="nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-bulb">
+            </use>
+          </svg>
+          <p>FAQs</p>
+        </a>
+        
+      </li>
+      
+      <li class="nav__item settings">
+        <a class="nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-cog"></use>
+          </svg>
+
+          <p>Settings</p>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <!-- <nav class="mobile-nav">
+    <img class="mobile-nav__user" src="./images/sukuna.jpg" alt="User image">
+
+    <ul class="mobile-nav__items">
+      <li class="mobile-nav__item profile">
+        <a class="mobile-nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-user"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-nav__item likedsongs">
+        <a class="mobile-nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-heart"></use>
+          </svg>
+
+        </a>
+      </li>
+
+
+      <li class="mobile-nav__item contact-us">
+        <a class="mobile-nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-chat-bubble-dots">
+            </use>
+          </svg>
+        </a>
+      </li>
+      
+      <li class="mobile-nav__item faq">
+        <a class="mobile-nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-bulb"></use>
+          </svg>
+          
+        </a>
+      </li>
+      
+      <li class="mobile-nav__item settings">
+        <a class="mobile-nav__links" href="#">
+          <svg class="icon-white icon-size-1 contact-us__icon">
+            <use xlink:href ="./icons/sprite.svg#icon-cog"></use>
+          </svg>
+          
+        </a>
+      </li>
+      
+    </ul>
+  </nav> -->
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__topbar">
+        <div class="menu">
+          <svg class=" menu__icon">
+            <use  xlink:href ="./icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </div>
+        <div class="search">
+          <input type="text" id="search" placeholder="Type artist name or song">
+
+          <label for="search">
+            <svg class="search__icon">
+              <use xlink:href ="./icons/sprite.svg#icon-search"></use>
+            </svg>
+          </label>
+
+          
+        </div>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="recommended">
+        <h2 class="content__header">Recommended for you</h2>
+        <div class="recommended__cards   cards__container">
+
+          <div class="recommended__card mg-rt">
+            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="recommended__card--img">
+            <h3 class="recommended__card--name">Monsters Go Bump</h3>
+            <h4 class="recommended__card--artist-name">Erika</h4>
+          </div>
+
+          <div class="recommended__card mg-rt">
+            <img src="./images/arrdee2.jpg" alt="songs  By Arrdee" class="recommended__card--img">
+            <h3 class="recommended__card--name">Body</h3>
+            <h4 class="recommended__card--artist-name">Arrdee</h4>
+          </div>
+          <div class="recommended__card mg-rt">
+            <img src="./images/arrdee2.jpg" alt="songs  By Arrdee" class="recommended__card--img">
+            <h3 class="recommended__card--name">Body</h3>
+            <h4 class="recommended__card--artist-name">Arrdee</h4>
+          </div>
+
+          <div class="recommended__card mg-rt">
+            <img src="./images/arrdee2.jpg" alt="songs  By Arrdee" class="recommended__card--img">
+            <h3 class="recommended__card--name">Body</h3>
+            <h4 class="recommended__card--artist-name">Arrdee</h4>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="playlist">
+        <h2 class="content__header">My playlist</h2>
+
+        <div class="playlist__cards  cards__container">
+          <div class="playlist__card mg-rt">
+            <img src="./images/Twice As Tall.jpg" alt="A playlist titled Twice as Tall by Burna Boy" class="playlist__card--img">
+            <h3 class="playlist__card--name">Twice As Tall</h3>
+            <h4 class="playlist__card--artist-name">Burna Boy</h4>
+          </div>
+
+          <div class="playlist__card mg-rt">
+            <img src="./images/wizkidEssence.jpg" alt="Made In Lagos By Wizkid" class="playlist__card--img">
+            <h3 class="playlist__card--name">Made In Lagos</h3>
+            <h4 class="playlist__card--artist-name">Wizkid</h4>
+          </div>
+          <div class="playlist__card mg-rt">
+            <img src="./images/wizkidEssence.jpg" alt="Made In Lagos By Wizkid" class="playlist__card--img">
+            <h3 class="playlist__card--name">Made In Lagos</h3>
+            <h4 class="playlist__card--artist-name">Wizkid</h4>
+          </div>
+          <div class="playlist__card mg-rt">
+            <img src="./images/wizkidEssence.jpg" alt="Made In Lagos By Wizkid" class="playlist__card--img">
+            <h3 class="playlist__card--name">Made In Lagos</h3>
+            <h4 class="playlist__card--artist-name">Wizkid</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="music-player">
+      <div class="music-player__content">
+        <img src="./images/arrDee.jpg" alt="arrdee" class="music-player__content-img">
+        <div class="music-player__content--details">
+          <h3 class="music-player__content--title">Shape of you</h3>
+          <h4 class="music-player__content--artist-name  dim-text">Ed Sheeran</h4>
+        </div>
+      </div>
+      <div class="music-player__control">
+        <div class="music-player__control--backward">
+          <svg class="music-player__control--backward-icon icon">
+            <use xlink:href="./icons/sprite.svg#icon-previous2"></use>
+          </svg>
+        </div>
+        <div class="music-player__control--pause ">
+          <svg  class="music__inactive music-player__control--pause-icon icon">
+            <use xlink:href="./icons/sprite.svg#icon-pause"></use>
+          </svg>
+          <svg class="music__active music-player__control--play-icon icon">
+            <use xlink:href="./icons/sprite.svg#icon-play3"></use>
+          </svg>
+        </div>
+        <div class="music-player__control--forward">
+          <svg class="music-player__control--backward-icon icon" >
+            <use xlink:href="./icons/sprite.svg#icon-next2"></use>
+          </svg>
+        </div>
+      </div>
+  </section>
+  </div> 
+
+</body>
+</html>

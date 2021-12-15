@@ -1,0 +1,62 @@
+// .cards{
+//     text-align: center;
+//     display: flex;
+//     justify-content: space-between;
+
+//     margin-bottom: 1rem;
+//     width: 22rem;
+//     height: 22rem;
+
+// }
+.cards__container{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+    min-width: 22rem;
+    min-height: 22rem;
+
+    overflow-x: scroll;
+
+}
+
+// .card{
+    
+// }
+
+
+//margins
+.mg-rt{
+    margin-right: 2rem;
+}
+
+
+
+
+//text-colors
+.dim-text{
+    color: $dim-white;
+}
+
+
+//icons
+.icon-white{
+    fill: $plain-white;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.icon-size-1{
+    width: 1rem;
+    height: 1rem;
+}
+.icon-size-2{
+    width: 3rem;
+    height: 3rem;
+}
+.icon-size-3{
+    width: 4rem;
+    height: 4rem;
+}

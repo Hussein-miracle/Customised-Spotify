@@ -1,0 +1,59 @@
+.music-player{
+
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #fff;
+    position:absolute;
+    bottom: -1.2rem;
+    left: -20px;
+    position: relative;
+
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        &-img{
+            align-self: flex-start;
+            height: 3.4rem;
+            width: 3.4rem;
+            margin-top: -1.35rem;
+            margin-right: 1rem;
+            object-fit: cover;
+            
+        }
+
+        &--details{
+            margin-top: -1rem;
+        }
+    }
+
+    &::before{
+        content: " ";
+        height: 0;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        border-top: 1px solid #fff;
+        margin-bottom: 1rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__control{
+        margin-top: -1rem;
+        display: flex;
+        justify-content: space-between;
+        padding-right: -2rem;
+        margin-right: 1.5rem;
+
+        &--play-icon{
+            display: none;
+        }
+    }
+}

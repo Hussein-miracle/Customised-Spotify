@@ -1,0 +1,7 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    &__header{
+        margin-bottom: 1rem;
+    }
+}

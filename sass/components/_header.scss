@@ -1,0 +1,35 @@
+.header{
+    &__topbar{
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 72vw;
+    }
+}
+
+
+
+.search{
+    position: relative;
+
+}
+#search{
+    border-radius: 2rem;
+    z-index: -3;
+    border: none;
+    padding: 4px 10px;
+}
+
+#search label{
+
+}
+#search + label .search__icon{
+    position: absolute;
+    // border-radius: 2rem;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 2rem;
+    height: 2rem;
+    fill: #000;
+    z-index: 10;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "music-n-vibes",
+  "version": "1.0.0",
+  "description": "A Music web app built with Vanilla JS",
+  "main": "index.js",
+  "scripts": {
+    "compileNwatch-sass": "sass  main.scss css/style.css -w"
+  },
+  "author": "Abdullahi Hussein",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
