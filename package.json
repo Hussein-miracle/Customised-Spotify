@@ -6,6 +6,7 @@
   "scripts": {
     "watch-sass": "sass  main.scss css/style.css -w",
     "watch-like-sass": "sass  likedSongs/likedSongs.scss  likedSongs/css/likedSongs.css -w",
+    "watch-play-sass": "sass  playingNow/playingNow.scss  playingNow/css/playingNow.css -w",
     "live-serve": "live-server --browser=chrome"
   },
   "author": "Abdullahi Hussein",

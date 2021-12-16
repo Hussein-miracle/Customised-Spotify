@@ -1,0 +1,150 @@
+.icon-white {
+  fill: #fff;
+}
+
+.icon-white-2 {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-size-1 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-size-2 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-size-3 {
+  width: 4rem;
+  height: 4rem;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+}
+header svg {
+  margin-left: -4rem;
+  margin-right: 2.5rem;
+}
+header h4 {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.player-2 {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.player-2__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.player-2__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.music-title {
+  text-align: center;
+  color: #fff;
+}
+
+.music__artist-name {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -1rem;
+}
+
+.icon-1 {
+  height: 1rem;
+  width: 1rem;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.icon-like {
+  height: 1rem;
+  width: 1rem;
+  fill: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 15%;
+  right: 0px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.music-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music__timestamps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+
+.music-details__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 5px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.music-bar {
+  height: 3px;
+  background-color: #fff;
+  width: 14%;
+  border-radius: 1rem;
+}
+
+.music-player-2__btns {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-color: #1F1D36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=playingNow.css.map */

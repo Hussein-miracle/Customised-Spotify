@@ -37,7 +37,15 @@
         }
 
         &--details{
+            width: 40%;
             margin-top: -1rem;
+        }
+
+        &--title{
+            font-size: 12px;
+        }
+        &--artist-name{
+            font-size: 10px;
         }
     }
 
@@ -91,8 +99,8 @@
         margin-top: -1rem;
         display: flex;
         justify-content: space-between;
-        padding-right: -2rem;
-        margin-right: 1.5rem;
+        padding-right: -2.5rem;
+        margin-right: 1rem;
     }
 }
 
@@ -111,3 +119,5 @@
 .music-btn__play:active{
     transform:  translateY(3px) scale(1.2);
 }
+
+

@@ -32,10 +32,11 @@
 
 .music-player {
   height: 10%;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-right: 4rem;
   position: absolute;
   bottom: 0;
 }
@@ -46,6 +47,9 @@
 .music-player__content {
   display: flex;
   justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: flex-start;
 }
 .music-player__content-img {
   align-self: flex-start;
@@ -56,7 +60,15 @@
   object-fit: cover;
 }
 .music-player__content--details {
+  width: 45%;
   margin-top: -1rem;
+  margin-left: -2rem;
+}
+.music-player__content--title {
+  font-size: 12px;
+}
+.music-player__content--artist-name {
+  font-size: 10px;
 }
 .music-player .progress {
   justify-self: flex-start;
@@ -91,11 +103,12 @@
   border-radius: 50%;
 }
 .music-player__control {
+  align-self: flex-end;
   margin-top: -1rem;
   display: flex;
   justify-content: space-between;
-  padding-right: -2rem;
-  margin-right: 1.5rem;
+  padding-right: -2.5rem;
+  margin-right: 0.8rem;
 }
 
 .main-controls {
@@ -121,7 +134,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 55.5%;
 }
 
 html, body {
@@ -148,6 +161,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 header {

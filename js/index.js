@@ -43,9 +43,14 @@ function renderSong(title){
     music.src = `music/${title}.mp3`;
     music.alt = `${artists[index]}-${title}`;
     musicCover.src = `images/${title}.jpg`;
+    if(artists[index].length > musicTitleMax){
+        artistName.style.fontSize = "10px";
 
+    }else{
+        artistName.style.fontSize = "42.5%";
+    }
     if(songTitles[index].length > musicTitleMax){
-        musicTitle.style.fontSize = "8px";
+        musicTitle.style.fontSize = "12px";
     }else{
         musicTitle.style.fontSize = "52.5%";
     }
@@ -121,13 +126,9 @@ function playPreviousSong(){
 
 }
 
-function setCurrentProgress(){
-
-}
 
 
-
-function updatePlayProgress(e){
+function setCurrentProgress(e){
     // console.log(e.srcElement)
     const {duration , currentTime} = e.srcElement;
 
@@ -185,5 +186,7 @@ closeMenuBtn.addEventListener("click",()=>{
 
 
 
-music.addEventListener("timeupdate",updatePlayProgress)
-music.addEventListener("ended",playNextSong)
+music.addEventListener("timeupdate",setCurrentProgress)
+music.addEventListener("ended",playNextSong);
+
+

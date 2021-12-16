@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    font-size: 55.5%;
 }
 html,body{
     height: 100%;
@@ -33,6 +33,7 @@ body{
     position:relative;
     display: flex;
     flex-direction: column;
+    position: relative;
     // justify-content: center;
     // align-items: center;
 

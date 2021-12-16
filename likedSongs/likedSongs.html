@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/likedSongs.css">
     <title>Liked-Songs</title>
+    <script type="module" src="./js/likedsongs.js" defer></script>
 </head>
 <body>
     <header>
+      <a href="../index.html">
         <button>
-            <svg class="icon-size-1 icon-white">
-                <use xlink:href="./icons/sprite.svg#icon-arrow-left"></use>
-            </svg>
-        </button>
+          <svg class="icon-size-1 icon-white">
+              <use xlink:href="./icons/sprite.svg#icon-arrow-left"></use>
+          </svg>
+      </button>
+      </a>
+        
         
         
         <button>
@@ -23,6 +27,7 @@
         </button>
         
     </header>
+    <audio src="./music/Love_Nwantinti.mp3" id="music"></audio>
     <main class="main">
         <h2>Liked songs</h2>
         <div class="liked-songs__container">
@@ -52,6 +57,7 @@
             
         </div>
     </main>
+
     <section class="music-player">
         <div class="progress">
           <div class="progress-bar">
@@ -61,7 +67,9 @@
         <div class="main-controls">
           <div class="music-player__content">
   
-            <img src="./images/Love_Nwantinti.jpg" alt="Ckay-Love_Nwantinti" class="music-player__content-img">
+            <a href="#">
+              <img src="./images/Love_Nwantinti.jpg" alt="Ckay-Love_Nwantinti" class="music-player__content-img">
+            </a>
     
             <div class="music-player__content--details">
     

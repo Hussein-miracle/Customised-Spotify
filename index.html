@@ -7,7 +7,7 @@
   <link rel="icon" href="./icons/icons8-music.svg">
   <link rel="stylesheet" href="./css/style.css">
   <title>Customised Spotify</title>
-  <script src="./js/index.js" defer></script>
+  <script type="module" src="./js/index.js" defer></script>
 </head>
 <body class="body">
   <nav class="nav">
@@ -27,12 +27,12 @@
           <p>Profile</p></a>
       </li>
       <li class="nav__item ">
-        <a class="nav__links liked-songs" href="#">
+        <a class="nav__links liked-songs" href="./likedSongs/likedSongs.html">
           <svg class="icon-white icon-size-1 liked-songs__icon">
             <use xlink:href ="./icons/sprite.svg#icon-heart"></use>
           </svg>
 
-          <p>Favs</p>
+          <p>Liked-Songs</p>
 
         </a>
       </li>
@@ -215,8 +215,9 @@
 
       <div class="main-controls">
         <div class="music-player__content">
-
-          <img src="./images/Love_Nwantinti.jpg" alt="Ckay-Love_Nwantinti" class="music-player__content-img">
+          <a href="#">
+            <img src="./images/Love_Nwantinti.jpg" alt="Ckay-Love_Nwantinti" class="music-player__content-img">
+          </a>
   
           <div class="music-player__content--details">
   

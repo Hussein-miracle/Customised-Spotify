@@ -44,12 +44,12 @@
 
 
 .music-player{
-
     height: 10%;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-right: 4rem;
     // justify-content: space-between;
     // align-items: center;
 
@@ -70,7 +70,10 @@
     &__content{
         display: flex;
         justify-content: space-between;
-
+        // flex-basis: 0 0 200px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        align-self: flex-start;
         &-img{
             align-self: flex-start;
             height: 3.4rem;
@@ -82,7 +85,19 @@
         }
 
         &--details{
+            width: 45%;
             margin-top: -1rem;
+            margin-left: -2rem;
+            // h3,h4{
+
+            // }
+        }
+        &--title{
+            
+            font-size: 12px;
+        }
+        &--artist-name{
+            font-size: 10px;
         }
     }
 
@@ -132,19 +147,20 @@
     }
 
     &__control{
+        align-self: flex-end;
+        // flex: 1;
         // position: relative;
         margin-top: -1rem;
         display: flex;
         justify-content: space-between;
-        padding-right: -2rem;
-        margin-right: 1.5rem;
+        padding-right: -2.5rem;
+        margin-right: 0.8rem;
     }
 }
 
 
 .main-controls{
     margin-top: 1.2rem;
-
 
     display: flex;
     text-align: center;

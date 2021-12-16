@@ -295,7 +295,14 @@ button:focus {
   object-fit: cover;
 }
 .music-player__content--details {
+  width: 40%;
   margin-top: -1rem;
+}
+.music-player__content--title {
+  font-size: 12px;
+}
+.music-player__content--artist-name {
+  font-size: 10px;
 }
 .music-player .progress {
   justify-self: flex-start;
@@ -333,8 +340,8 @@ button:focus {
   margin-top: -1rem;
   display: flex;
   justify-content: space-between;
-  padding-right: -2rem;
-  margin-right: 1.5rem;
+  padding-right: -2.5rem;
+  margin-right: 1rem;
 }
 
 .main-controls {
