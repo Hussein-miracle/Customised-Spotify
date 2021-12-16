@@ -1,5 +1,8 @@
-# Music-N-Calm
-A Music web app
+# Customised Spotify
+A Music web app inspired by spotify built with Vanilla JS.
 
 ## Methodology
 - Mobile First Approach
+
+## PRODUCTION?
+- Still in progress🌝
