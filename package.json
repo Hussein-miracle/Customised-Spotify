@@ -1,10 +1,12 @@
 {
-  "name": "music-n-vibes",
+  "name": "customised-spotify",
   "version": "1.0.0",
   "description": "A Music web app built with Vanilla JS",
   "main": "index.js",
   "scripts": {
-    "compileNwatch-sass": "sass  main.scss css/style.css -w"
+    "watch-sass": "sass  main.scss css/style.css -w",
+    "watch-like-sass": "sass  likedSongs/likedSongs.scss  likedSongs/css/likedSongs.css -w",
+    "live-serve": "live-server --browser=chrome"
   },
   "author": "Abdullahi Hussein",
   "license": "ISC",

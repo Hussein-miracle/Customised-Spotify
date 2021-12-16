@@ -2,34 +2,53 @@
     &__topbar{
         display: flex;
         justify-content: space-between;
-        flex: 0 0 72vw;
+        height: 10%;
+    }
+}
+
+.menu{
+    &__icon{
+        width: 2rem;
+        height: 2rem;
+        fill: $plain-white;
+        
     }
 }
 
 
-
 .search{
+    justify-self: flex-start;
+    align-self: flex-start;
     position: relative;
-
+    width: 50%;
+    
+    margin-right: 5.5rem;
+    &__icon{
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        margin-right: -6.4rem;
+        transform: translateX(50%);
+        width: 2rem;
+        height: 2rem;
+        fill: #000;
+        z-index: 10;
+    }
+        
 }
-#search{
+
+#search-input{
     border-radius: 2rem;
     z-index: -3;
     border: none;
-    padding: 4px 10px;
+    padding: 4px 8px;
+    
 }
 
 #search label{
+    width: 10px;
+    height: 10px;
+    transform: translateX(50%);
+}
 
-}
-#search + label .search__icon{
-    position: absolute;
-    // border-radius: 2rem;
-    left: 95%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 2rem;
-    height: 2rem;
-    fill: #000;
-    z-index: 10;
-}
+

@@ -1,7 +1,12 @@
 .content{
     display: flex;
     flex-direction: column;
+    height: 85%;
     &__header{
         margin-bottom: 1rem;
     }
+}
+
+button:focus{
+    outline: none;
 }

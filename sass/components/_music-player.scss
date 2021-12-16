@@ -1,16 +1,25 @@
 .music-player{
 
-    height: 5rem;
-    width: 100vw;
+    height: 10%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    border-top: #fff;
+    // justify-content: space-between;
+    // align-items: center;
+
+
+
+
     position:absolute;
-    bottom: -1.2rem;
-    left: -20px;
-    position: relative;
+    bottom: 0;
+    // left: -20px;
+    // position: relative;
+
+    button{
+        background-color: transparent;
+        border: none;
+    }
 
 
     &__content{
@@ -32,28 +41,73 @@
         }
     }
 
-    &::before{
-        content: " ";
-        height: 0;
-        background-color: #fff;
+    .progress{
+        justify-self: flex-start;
+        height: 5px;
         width: 100%;
-        position: absolute;
-        border-top: 1px solid #fff;
-        margin-bottom: 1rem;
-        top: 0;
-        left: 0;
+        background-color: $dim-white;
+        width: 100%;
         z-index: 1;
+        margin-bottom: 1px;
+        border-radius: 1rem;
+        padding: 0 4px;
+
+        // display: flex;
+        // align-items: center;
+        
+
+        &-bar{
+            transform: translateY(15%);
+            margin-left: -5px;
+            border-radius: 1rem;
+            background-color: $dim-white-2;
+            width: 0%;
+            height: 4.5px;
+            z-index: 5;
+            position: relative;
+
+            &::after{
+                content: "";
+
+                position: absolute;
+
+                left: 98%;
+                top: 0;
+                transform: translateY(-25%);
+                
+                background-color: #fff;
+                width: 7.5px;
+                height: 7.5px;
+                border-radius: 50%;
+
+            }
+
+        }
+
     }
 
     &__control{
+        // position: relative;
         margin-top: -1rem;
         display: flex;
         justify-content: space-between;
         padding-right: -2rem;
         margin-right: 1.5rem;
-
-        &--play-icon{
-            display: none;
-        }
     }
+}
+
+
+.main-controls{
+    margin-top: 1.2rem;
+
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.music-btn__backward:active,
+.music-btn__forward:active,
+.music-btn__play:active{
+    transform:  translateY(3px) scale(1.2);
 }

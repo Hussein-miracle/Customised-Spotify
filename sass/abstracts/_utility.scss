@@ -9,15 +9,11 @@
 
 // }
 .cards__container{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(30%,50%));
 
-    margin-bottom: 1rem;
-    min-width: 22rem;
-    min-height: 22rem;
-
-    overflow-x: scroll;
+    grid-template-rows: max-content;
+    
 
 }
 
@@ -44,19 +40,45 @@
 .icon-white{
     fill: $plain-white;
 }
+.icon-white-2{
+    fill: $dim-white;
+}
 .icon{
     width: 2rem;
     height: 2rem;
 }
 .icon-size-1{
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 .icon-size-2{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .icon-size-3{
     width: 4rem;
     height: 4rem;
+}
+
+.play{
+    
+}
+
+@keyframes rotateEver {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes growNshrink {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(0.65);
+    }
 }

@@ -1,13 +1,15 @@
 .nav{
-    background-color: transparent;
+    background-color: #ff585f;
     z-index: 200;
-    width: 35%;
-    height: 90%;
-    font-size: 10px;
+    // width: 50%;
+    height: 100%;
+    font-size: 16px;
     transform: translateX(-100%);
-    position: absolute;
-    left: 0;
+    // position: absolute;
+    // left: 0;
+    padding: 15px;
 
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -22,6 +24,9 @@
     }
     &__item{
         list-style: none;
+        padding: 10px;
+        display: flex;
+        justify-content:space-between;
         
     }
     &__item:hover{
@@ -31,18 +36,18 @@
     &__links{
         text-decoration: none;
 
-
+        
         display: flex;
         justify-content: center;
         align-items: center;
 
 
         // font-size: 12px;
-        font-weight:300;
+        // font-weight:300;
         color: var(--dim-white);
         svg{
-            margin: 0;
             margin-right: 5px;
+            flex-shrink: 0;
         }
 
         p{
@@ -63,4 +68,31 @@
         object-fit: cover;
         object-position: center;
     }
+}
+
+
+#menu__close{
+    position:absolute;
+    top: 3px;
+    right: 3px;
+}
+#menu__close:active{
+    transform: scale(0.95);
+    fill:  blueviolet;
+}
+
+
+.settings__icon{
+    animation: rotateEver .4s  .2s infinite alternate;
+}
+
+// .liked-songs__icon{
+
+// }
+
+
+.liked-songs:hover .liked-songs__icon,
+.liked-songs:link .liked-songs__icon,
+.liked-songs:active .liked-songs__icon{
+    animation: growNshrink .3s  .2s infinite alternate;
 }
