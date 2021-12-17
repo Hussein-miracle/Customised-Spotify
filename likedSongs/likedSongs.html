@@ -9,14 +9,19 @@
     <script type="module" src="./js/likedsongs.js" defer></script>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="camera"></div>
+
     <header>
-      <a href="../index.html">
+      
         <button>
+          <a href="../index.html">
           <svg class="icon-size-1 icon-white">
               <use xlink:href="./icons/sprite.svg#icon-arrow-left"></use>
           </svg>
+        </a>
       </button>
-      </a>
+      
         
         
         
@@ -28,6 +33,7 @@
         
     </header>
     <audio src="./music/Love_Nwantinti.mp3" id="music"></audio>
+
     <main class="main">
         <h2>Liked songs</h2>
         <div class="liked-songs__container">
@@ -67,7 +73,7 @@
         <div class="main-controls">
           <div class="music-player__content">
   
-            <a href="#">
+            <a href="../playingNow/playingNow.html">
               <img src="./images/Love_Nwantinti.jpg" alt="Ckay-Love_Nwantinti" class="music-player__content-img">
             </a>
     
@@ -81,8 +87,6 @@
     
           <div class="music-player__control">
             
-    
-            <div class="control-btns">
               <button  class="music-btn__backward">
     
                 <svg class="music-control__backward icon-size-1 icon-white-2">
@@ -108,7 +112,7 @@
                 </svg>
               </button>
             
-            </div>
+            
     
               
           </div>
@@ -116,5 +120,6 @@
   
   
     </section>
+  </div>
 </body>
 </html>

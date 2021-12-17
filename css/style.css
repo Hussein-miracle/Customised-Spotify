@@ -76,7 +76,18 @@ img, video, svg {
 .body {
   background-color: #1F1D36;
   color: #fff;
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-width: 237px;
+}
+
+.wrapper-main {
+  width: 100%;
+  color: #fff;
   position: relative;
   display: flex;
   justify-content: center;
