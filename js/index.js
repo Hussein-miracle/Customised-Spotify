@@ -11,6 +11,8 @@ const openMenuBtn = document.querySelector(".menu")
 const closeMenuBtn = document.querySelector("#menu__close")
 const menuIcon = document.querySelector(".menu__icon");
 
+const contentContainer  = document.querySelector(".wrapper__content");
+
 const music = document.getElementById("music");
 
 const musicTitle = document.querySelector(".music-player__content--title");
@@ -43,17 +45,7 @@ function renderSong(title){
     music.src = `music/${title}.mp3`;
     music.alt = `${artists[index]}-${title}`;
     musicCover.src = `images/${title}.jpg`;
-    if(artists[index].length > musicTitleMax){
-        artistName.style.fontSize = "10px";
-
-    }else{
-        artistName.style.fontSize = "42.5%";
-    }
-    if(songTitles[index].length > musicTitleMax){
-        musicTitle.style.fontSize = "12px";
-    }else{
-        musicTitle.style.fontSize = "52.5%";
-    }
+    
     musicTitle.innerText= `${songTitles[index]}`;
     artistName.innerText = `${artists[index]}`;
 
@@ -172,7 +164,7 @@ playBtn.addEventListener("click",() => {
 
 //nav button not yet full fixed
 openMenuBtn.addEventListener("click",()=>{
-    body.classList.toggle("show-nav");
+    contentContainer.classList.toggle("show-nav");
     
 
     
@@ -180,7 +172,7 @@ openMenuBtn.addEventListener("click",()=>{
 
 
 closeMenuBtn.addEventListener("click",()=>{
-    body.classList.remove("show-nav");
+    contentContainer.classList.remove("show-nav");
 
 })
 

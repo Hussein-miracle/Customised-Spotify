@@ -1,12 +1,18 @@
 .header{
     &__topbar{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content min-content;
+        grid-template-rows: min-content;
         height: 10%;
     }
 }
 
 .menu{
+    // width: 20%;
+    grid-column: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    z-index: 11;
     &__icon{
         width: 2rem;
         height: 2rem;
@@ -17,18 +23,19 @@
 
 
 .search{
-    justify-self: flex-start;
-    align-self: flex-start;
+    grid-column: 2 / span 1;
+    justify-self: end;
+    align-self: center;
+
+
     position: relative;
-    width: 50%;
-    
-    margin-right: 5.5rem;
+    display: grid;
+    grid-template-columns:  1fr min-content;
+    grid-template-rows: 1fr;
     &__icon{
         position: absolute;
         top: 15%;
-        right: 10%;
-        margin-right: -6.4rem;
-        transform: translateX(50%);
+        right: 7%;
         width: 2rem;
         height: 2rem;
         fill: #000;
@@ -38,17 +45,20 @@
 }
 
 #search-input{
+    justify-self: end;
     border-radius: 2rem;
     z-index: -3;
     border: none;
-    padding: 4px 8px;
-    
+    height: 2.5rem;
+    margin: 0 0 0 3rem;
+    width: 20rem;
+    padding: 4px 8px;    
+    z-index: 10;
 }
 
-#search label{
-    width: 10px;
+.search label{
+    // width: 10px;
     height: 10px;
-    transform: translateX(50%);
 }
 
 

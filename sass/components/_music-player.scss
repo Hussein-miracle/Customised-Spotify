@@ -23,8 +23,9 @@
 
 
     &__content{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns:max-content max-content;
+        grid-template-rows: min-content;
 
         &-img{
             align-self: flex-start;
@@ -37,16 +38,19 @@
         }
 
         &--details{
-            width: 40%;
+            display: grid;
+            grid-template-columns: min-content;
+            grid-template-rows: repeat(auto-fit,max-content);
+            // width: 40%;
             margin-top: -1rem;
         }
 
-        &--title{
-            font-size: 12px;
-        }
-        &--artist-name{
-            font-size: 10px;
-        }
+        // &--title{
+        //     // font-size: 12px;
+        // }
+        // &--artist-name{
+        //     // font-size: 10px;
+        // }
     }
 
     .progress{
@@ -54,7 +58,7 @@
         height: 5px;
         width: 100%;
         background-color: $dim-white;
-        width: 100%;
+        width: 98%;
         z-index: 1;
         margin-bottom: 1px;
         border-radius: 1rem;
@@ -109,9 +113,11 @@
     margin-top: 1.2rem;
 
 
-    display: flex;
+    display: grid;
     text-align: center;
-    justify-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr max-content;
+    grid-auto-flow: row;
 }
 
 .music-btn__backward:active,

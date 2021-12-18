@@ -159,9 +159,15 @@
 .main-controls{
     margin-top: 1.2rem;
 
-    display: flex;
+    // display: flex;
+    // text-align: center;
+    // justify-content: space-between;
+
+    display: grid;
     text-align: center;
-    justify-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr max-content;
+    grid-auto-flow: row;
 }
 
 .music-btn__backward:active,

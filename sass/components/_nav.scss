@@ -1,36 +1,39 @@
 .nav{
-    background-color: #ff585f;
+    background-color: transparent;
     z-index: 200;
-    // width: 50%;
+    
     height: 100%;
     font-size: 16px;
-    transform: translateX(-100%);
-    // position: absolute;
-    // left: 0;
-    padding: 15px;
+    transform: translateX(-120%);
+    
+    padding: 4px;
 
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content min-content 1fr;
+    
     &__items{
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        margin-bottom: 4rem;
+        align-self: end;
+        
+        grid-template-rows: repeat(auto-fit,max-content);
+        grid-template-columns: 1fr;
     }
     &__item{
+        // margin-top: -1rem;
         list-style: none;
         padding: 10px;
-        display: flex;
-        justify-content:space-between;
+        margin: 1rem 0;
+        
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-template-rows: max-content;
         
     }
     &__item:hover{
-        border-bottom: #ff585f;
+        border-bottom:2px solid #ff585f;
 
     }
     &__links{
@@ -56,25 +59,57 @@
     }
 
     &__links:hover{
-        color: $primary-color;
+        color: $dim-white-2;
+        
+    }
+    &__links:hover{
+        color: $dim-white-2;
+        
+    }
+    &__links:hover .link__icon{
+        fill: $dim-white-2;
         
     }
 
     &__user{
-        width: 5rem;
-        height: 5rem;
-        margin-top: 2rem;
+        align-self: center;
+        justify-self: center;
+        width: 7rem;
+        height: 7rem;
+        margin-top: 3rem;
         border-radius: 50%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .buttons{
+        align-self: center;
+        justify-self: start;
+
+        display: flex;
+        justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: repeat(2,max-content);
+
+        .btn-1{
+            // grid-column: 1 / span 1;
+            // justify-self: start;
+            align-self: start;
+        }
+        .btn-2{
+            // grid-column: 2 / span 1;
+            align-self: end;
+            // justify-self: end;
+            margin-left: 4rem;
+        }
     }
 }
 
 
 #menu__close{
-    position:absolute;
-    top: 3px;
-    right: 3px;
+    // position:absolute;
+    // top: 3px;
+    // right: 3px;
 }
 #menu__close:active{
     transform: scale(0.95);
