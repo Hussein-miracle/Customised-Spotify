@@ -7,11 +7,18 @@
     "watch-sass": "sass  main.scss css/style.css -w",
     "watch-like-sass": "sass  likedSongs/likedSongs.scss  likedSongs/css/likedSongs.css -w",
     "watch-play-sass": "sass  playingNow/playingNow.scss  playingNow/css/playingNow.css -w",
-    "live-serve": "live-server --browser=chrome"
+    "live-serve": "live-server --browser=chrome",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Abdullahi Hussein",
   "license": "ISC",
   "devDependencies": {
+    "parcel": "^2.0.1",
     "sass": "^1.45.0"
+  },
+  "dependencies": {
+    "core-js": "^3.20.1",
+    "regenerator-runtime": "^0.13.9"
   }
 }

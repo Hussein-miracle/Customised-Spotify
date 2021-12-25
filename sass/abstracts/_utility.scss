@@ -1,8 +1,9 @@
 .cards__container{
     display: grid;
-    grid-template-columns: repeat(4,minmax(30%,50%));
+    grid-template-columns: repeat(5,minmax(40%,50%));
 
-    grid-template-rows: max-content;
+    grid-template-rows: max-content
+    // grid-auto-flow: row;
     
 
 }
@@ -16,7 +17,7 @@
 
 }
 .cards__container::-webkit-scrollbar-thumb{
-    width: 2rem;
+    // width: 1rem;
     background-color: $primary-color;
     border: .005px solid  #1d2436b7;
     border-radius: 1rem;
@@ -24,8 +25,9 @@
 
 }
 .cards__container::-webkit-scrollbar-track {
+    // width: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow:inset  0 0 6px rgba(0,0,0,0.3);
 }
 
 
@@ -57,6 +59,10 @@
 .icon-size-1{
     width: 2rem;
     height: 2rem;
+}
+.icon-music-controls{
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .icon-size-2{
     width: 2.5rem;
