@@ -139,7 +139,7 @@ html {
 }
 
 .wrapper-main.show-nav {
-  transform: translateX(50%);
+  transform: translateX(45%);
   padding-left: 10px;
 }
 
@@ -315,7 +315,7 @@ button {
   z-index: 200;
   height: 100%;
   font-size: 16px;
-  transform: translateX(-150%);
+  transform: translateX(-120%);
   transition: all 0.4s ease;
   padding: 4px;
   position: relative;

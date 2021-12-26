@@ -13,11 +13,11 @@
     .wrapper-main{
       justify-content: center;
     }
-.wrapper-main.show-nav {
-  transform: translateX(45%);
+  .wrapper-main.show-nav {
+    transform: translateX(45%);
 
-  // padding-left: 10px;
-//   transition:  all .4s ease;
-}
+    // padding-left: 10px;
+  //   transition:  all .4s ease;
+  }
     
 }
