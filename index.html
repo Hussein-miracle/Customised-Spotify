@@ -14,7 +14,6 @@
 
       <div class="camera"></div>
 
-      <div class="wrapper__content-1">
 
         <nav class="nav">
           <div class="buttons">
@@ -92,11 +91,13 @@
             </li>
           </ul>
         </nav>
+        <audio src="./music/Love_Nwantinti.mp3" id="music"></audio>
 
+        
         <div class="wrapper">
 
           <div class="wrapper-homepage">
-            <!-- <header class="header__topbar">
+            <header class="header__topbar">
               <div class="menu">
                 <svg class="menu__icon">
                   <use xlink:href="./icons/sprite.svg#icon-menu"></use>
@@ -107,7 +108,7 @@
                 <input
                   type="text"
                   id="search-input"
-                  placeholder="Type artist name or song"
+                  placeholder="Search music title or name"
                 />
   
                 <label for="search">
@@ -118,51 +119,57 @@
                   </button>
                 </label>
               </form>
-            </header> -->
+            </header> 
   
-            <!-- <section class="content">
+            <section class="content">
               <div class="recommended">
                 <h2 class="content__header">Recommended for you</h2>
   
                 <div class="recommended__cards cards__container">
-                  <div class="recommended__card-1 mg-rt">
+                  <div class="recommended__card-1 recommended-song  mg-rt">
                     <img
-                      src="./images/monstersGoBump.jpg"
-                      alt="monstersGoBump recommended"
-                      class="recommended__card--img"
+                      src="./images/Peru_Remix.jpg"
+                      alt="Peru_Remix recommended"
+                      class="recommended__card--img" data-index="1"
                     />
-                    <h3 class="recommended__card--name">Monsters Go Bump</h3>
-                    <h4 class="recommended__card--artist-name">Erika</h4>
+                    <h3 class="recommended__card--name">Peru_Remix</h3>
+                    <h4 class="recommended__card--artist-name">Fire-DML ft Ed-Sheeran</h4>
                   </div>
   
-                  <div class="recommended__card-2 mg-rt">
+                  <div class="recommended__card-2 recommended-song  mg-rt">
                     <img
-                      src="./images/arrdee2.jpg"
-                      alt="songs  By Arrdee"
-                      class="recommended__card--img"
+                      src="./images/Mood.jpg"
+                      alt="Mood by 24kGoldin and ian-dior"
+                      class="recommended__card--img" data-index="8"
+                      
                     />
-                    <h3 class="recommended__card--name">Body</h3>
-                    <h4 class="recommended__card--artist-name">Arrdee</h4>
+                    <h3 class="recommended__card--name">Mood</h3>
+                    <h4 class="recommended__card--artist-name">24kGoldn-ft.-Iann-Dior</h4>
                   </div>
-                  <div class="recommended__card-3 mg-rt">
+
+
+                  <div class="recommended__card-3 recommended-song  mg-rt">
                     <img
-                      src="./images/arrdee2.jpg"
-                      alt="songs  By Arrdee"
-                      class="recommended__card--img"
+                      src="./images/Love_Nwantinti.jpg"
+                      alt="Ckay Love_Nwantinti"
+                      class="recommended__card--img" data-index="0"
                     />
-                    <h3 class="recommended__card--name">Body</h3>
-                    <h4 class="recommended__card--artist-name">Arrdee</h4>
+                    <h3 class="recommended__card--name">Love_Nwantinti</h3>
+                    <h4 class="recommended__card--artist-name">Ckay</h4>
                   </div>
   
-                  <div class="recommended__card-4 mg-rt">
+                  <div class="recommended__card-4 recommended-song  mg-rt">
                     <img
-                      src="./images/arrdee2.jpg"
-                      alt="songs  By Arrdee"
-                      class="recommended__card--img"
+                      src="./images/Young_Dumb_Broke.jpg"
+                      alt="Young_Dumb_Broke Khalid"
+                      class="recommended__card--img" data-index="3"
                     />
-                    <h3 class="recommended__card--name">Body</h3>
-                    <h4 class="recommended__card--artist-name">Arrdee</h4>
+                    <h3 class="recommended__card--name">Young_Dumb_Broke</h3>
+                    <h4 class="recommended__card--artist-name">Khalid</h4>
                   </div>
+                  
+
+
                 </div>
               </div>
   
@@ -170,123 +177,60 @@
                 <h2 class="content__header">My playlist</h2>
   
                 <div class="playlist__cards cards__container">
-                  <div class="playlist__card mg-rt">
+                  <div class="playlist__card playlist-song mg-rt">
                     <img
-                      src="./images/Twice As Tall.jpg"
-                      alt="A playlist titled Twice as Tall by Burna Boy"
-                      class="playlist__card--img"
+                      src="./images/Habibi.jpg"
+                      alt="Ricky Rich FT ARAM Mafia"
+                      class="playlist__card--img" data-index="6"
                     />
-                    <h3 class="playlist__card--name">Twice As Tall</h3>
+                    <h3 class="playlist__card--name">Habibi</h3>
                   </div>
   
-                  <div class="playlist__card mg-rt">
+                  <div class="playlist__card playlist-song mg-rt">
                     <img
-                      src="./images/wizkidEssence.jpg"
-                      alt="Made In Lagos By Wizkid"
-                      class="playlist__card--img"
+                      src="./images/Industry-Baby.jpg"
+                      alt="Industry-Baby by LIL-NAS-x"
+                      class="playlist__card--img" data-index="5"
                     />
-                    <h3 class="playlist__card--name">Made In Lagos</h3>
+                    <h3 class="playlist__card--name">Industry-Baby</h3>
                   </div>
-                  <div class="playlist__card mg-rt">
+                  <div class="playlist__card playlist-song mg-rt">
                     <img
-                      src="./images/wizkidEssence.jpg"
-                      alt="Made In Lagos By Wizkid"
-                      class="playlist__card--img"
+                      src="./images/Baby-Riddim.jpg"
+                      alt="Baby-Riddim by FAVE"
+                      class="playlist__card--img" data-index="4"
                     />
-                    <h3 class="playlist__card--name">Made In Lagos</h3>
+                    <h3 class="playlist__card--name">Baby-Riddim</h3>
                   </div>
-                  <div class="playlist__card mg-rt">
+                  
+
+                  <div class="playlist__card playlist-song mg-rt">
                     <img
-                      src="./images/wizkidEssence.jpg"
-                      alt="Made In Lagos By Wizkid"
-                      class="playlist__card--img"
+                      src="./images/Montero-Call-Me-By-Your-Name.jpg"
+                      alt="Montero-Call-Me-By-Your-Name"
+                      class="playlist__card--img" data-index="7"
                     />
-                    <h3 class="playlist__card--name">Made In Lagos</h3>
+                    <h3 class="playlist__card--name">Montero-Call-Me-By-Your-Name</h3>
+                  </div>
+                  <div class="playlist__card playlist-song mg-rt">
+                    <img
+                      src="./images/Feeling.jpg"
+                      alt="Feeling buju"
+                      class="playlist__card--img" data-index="2"
+                    />
+                    <h3 class="playlist__card--name">Feeling</h3>
                   </div>
                 </div>
               </div>
-            </section> -->
 
-            <!-- <div class="wrapper-likes">
+            </section>
 
-              <header   class="wrapper-likes__header">
-                
-                  <button class="wrapper-likes__header--btn">
-                    <a href="../index.html">
-                    <svg class="icon-size-1 icon-white">
-                        <use xlink:href="./icons/sprite.svg#icon-arrow-left"></use>
-                    </svg>
-                  </a>
-                </button>
-                
-                  
-                  
-                  
-                  <button class="wrapper-likes__header--btn">
-                      <svg class="icon-size-1 icon-white">
-                          <use xlink:href="./icons/sprite.svg#icon-equalizer"></use>
-                      </svg>
-                  </button>
-                  
-              </header>
-
-              <main class="likes-main">
-                <h2>Liked songs</h2>
-                <div class="liked-songs__container">
-        
-        
-                        <div class="liked-songs__card-1 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-2 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-3 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-4 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-4 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-4 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-4 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-                        <div class="liked-songs__card-4 mg-rt">
-                            <img src="./images/monstersGoBump.jpg" alt="monstersGoBump recommended" class="liked-songs__card--img">
-                            <h3 class="liked-songs__card--name">Monsters Go Bump</h3>
-                            <h4 class="liked-songs__card--artist-name">Erika</h4>
-                        </div>
-        
-                    
-                </div>
-            </main>
-          
-          
-            </div>   -->
+            
 
           </div>
           
 
-          <audio src="./music/Love_Nwantinti.mp3" id="music"></audio>
+          
 
           <section class="music-player">
             <div class="progress">
@@ -343,9 +287,11 @@
 
         </div>
 
+        
+
 
       </div>
 
-    </div>
+    
   </body>
 </html>

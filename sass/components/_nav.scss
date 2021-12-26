@@ -6,7 +6,8 @@
 
   height: 100%;
   font-size: 16px;
-  transform: translateX(-121%);
+  transform: translateX(-150%);
+  transition:  all .4s ease;
 
   padding: 4px;
 
@@ -34,7 +35,7 @@
     grid-template-rows: max-content;
   }
   &__item:hover {
-    border-bottom: 2px solid #ff585f;
+    border-bottom: 2px solid #00c46a;
   }
   &__links {
     text-decoration: none;

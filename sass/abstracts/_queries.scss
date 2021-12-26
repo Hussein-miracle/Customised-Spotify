@@ -1,0 +1,23 @@
+
+@media (min-width: 21.875em) {
+
+    body {
+      // margin: 0 auto;
+      // background-color: #fff !important;
+    }
+    .nav{
+      transform: translateX(-500%);
+    }
+
+    
+    .wrapper-main{
+      justify-content: center;
+    }
+.wrapper-main.show-nav {
+  transform: translateX(45%);
+
+  // padding-left: 10px;
+//   transition:  all .4s ease;
+}
+    
+}
