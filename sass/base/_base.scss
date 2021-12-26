@@ -39,11 +39,12 @@ html {
   color: #fff;
 //   position: relative;
 //   display: flex;
-//   justify-content: center;
-//   align-items: center;
+//   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  min-width: 240px;
+//   min-width: 240px;
 }
 
 .wrapper-main {
@@ -52,13 +53,13 @@ html {
 //   padding: 1.5rem 1.5rem 1.5rem 0 ;
   position: relative;
 //   max-width: 338px;
-  min-width: 240px;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
+//   min-width: 240px;
+  padding: 12px;
+//   width: 100%;
+  height: 95%;
   background-color: $primary-color;
   display: flex;
-  justify-content: space-between;
+//   justify-content: space-between;
   align-items: center;
   // position: relative;
 
