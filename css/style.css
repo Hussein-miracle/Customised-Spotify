@@ -147,6 +147,10 @@ button {
   cursor: pointer;
 }
 
+.wrapper-homepage {
+  height: 85%;
+}
+
 .playingNow-wrapper {
   background-color: transparent;
   padding: 10px;
@@ -482,13 +486,13 @@ button:focus {
 .recommended {
   display: flex;
   flex-direction: column;
-  height: 45%;
+  height: 40%;
 }
 
 .playlist {
   display: flex;
   flex-direction: column;
-  height: 45%;
+  height: 40%;
 }
 
 .playlist__cards {
@@ -530,12 +534,13 @@ button:focus {
 
 .music-player {
   height: 10%;
-  width: 98%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 6%;
+  margin-left: 1rem;
 }
 .music-player button {
   background-color: transparent;
