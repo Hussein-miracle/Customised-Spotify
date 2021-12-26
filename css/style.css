@@ -486,13 +486,13 @@ button:focus {
 .recommended {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 43%;
 }
 
 .playlist {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 45%;
 }
 
 .playlist__cards {
