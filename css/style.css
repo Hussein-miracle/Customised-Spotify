@@ -539,7 +539,7 @@ button:focus {
   flex-direction: column;
   text-align: center;
   position: absolute;
-  bottom: 6%;
+  bottom: 3%;
   margin-left: 1rem;
 }
 .music-player button {
