@@ -7,9 +7,9 @@
     text-align: center;
 
     position:absolute;
-    bottom: 3%;
-    // margin-top: -5rem;
-    margin-left: 1rem;
+    bottom: -8%;
+    // margin-top: 8rem;
+    // margin-left: 1rem;
 
 
     button{
@@ -42,6 +42,7 @@
             grid-template-rows: repeat(auto-fit,min-content);
             margin-top: -1rem;
             text-overflow:ellipsis;
+            place-items: center;
             // padding-right: -6px;
         }
 

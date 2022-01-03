@@ -18,8 +18,8 @@
 }
 .cards__container::-webkit-scrollbar-thumb{
     // width: 1rem;
-    background-color: $primary-color;
-    border: .005px solid  #1d2436b7;
+    background-color: #729fed;
+    // border: .005px solid  #0cb01d;
     border-radius: 1rem;
     
 
@@ -75,6 +75,11 @@
 
 .play{
     
+}
+.invisible{
+    visibility:hidden;
+    opacity:0;
+
 }
 
 @keyframes rotateEver {

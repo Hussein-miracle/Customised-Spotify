@@ -38,7 +38,7 @@
         right: 8%;
         width: 2rem;
         height: 2rem;
-        fill: #000;
+        fill: $primary-color;
         z-index: 10;
     }
         
@@ -46,7 +46,7 @@
 
 #search-input{
     justify-self: end;
-    border-radius: 2rem;
+    border-radius: 6px;
     z-index: -3;
     border: none;
     height: 2.5rem;

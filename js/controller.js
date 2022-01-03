@@ -476,18 +476,18 @@ playBtn.addEventListener("click",() => {
 })
 
 //nav button not yet full fixed
-// openMenuBtn.addEventListener("click",()=>{
-//     contentContainerWrapper.classList.toggle("show-nav");
+openMenuBtn.addEventListener("click",()=>{
+    contentContainerWrapper.classList.toggle("show-nav");
     
 
     
-// })
+})
 
 
-// closeMenuBtn.addEventListener("click",()=>{
-//     contentContainerWrapper.classList.remove("show-nav");
+closeMenuBtn.addEventListener("click",()=>{
+    contentContainerWrapper.classList.remove("show-nav");
 
-// })
+})
 
 
 
