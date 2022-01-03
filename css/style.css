@@ -501,7 +501,6 @@ button:focus {
 }
 
 .playlist__cards {
-  height: 60%;
   overflow: scroll;
 }
 
