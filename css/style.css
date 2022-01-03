@@ -425,7 +425,7 @@ button:focus {
 
 .header__topbar {
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr max-content;
   grid-template-rows: min-content;
   height: 10%;
 }
@@ -491,13 +491,13 @@ button:focus {
 .recommended {
   display: flex;
   flex-direction: column;
-  height: 43%;
+  height: 40%;
 }
 
 .playlist {
   display: flex;
   flex-direction: column;
-  height: 45%;
+  height: 60%;
 }
 
 .playlist__cards {
